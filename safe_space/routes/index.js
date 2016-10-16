@@ -5,8 +5,8 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('main_page');
 });
-router.get('/home', function(req, res, next) {
-  res.render('home');
+router.get('/dashboard', function(req, res, next) {
+  res.render('dashboard');
 });
 
 /* GET home page. */
@@ -23,6 +23,14 @@ router.get('/advice', function(req, res, next) {
 
 router.get('/dashboard', function(req, res, next) {
   res.render('dashboard');
+}};
+
+router.get('/angry', function(req, res, next) {
+  res.render('angry');
+});
+
+router.get('/question_of_the_day', function(req, res, next) {
+  res.render('question_of_the_day');
 });
 
 module.exports = router;
