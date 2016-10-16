@@ -20,6 +20,8 @@ router.get('/events/recent', function(req, res, next) {
 router.get('/advice', function(req, res, next) {
   res.render('advice');
 });
-
+router.get('/question_of_the_day', function(req, res, next) {
+  res.render('question_of_the_day');
+});
 
 module.exports = router;
