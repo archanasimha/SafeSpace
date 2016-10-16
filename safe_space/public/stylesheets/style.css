@@ -1,7 +1,52 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-a {
-  color: #00b7ff;
-}
+
+ body{background-color: #F1E6FC; text-align: center; font: 2em georgia; color: black}
+        /* unvisited link */
+        a:link {
+            color: black;
+            text-decoration: none;
+            font-family: Century Gothic;
+        }
+
+        /* visited link */
+        a:visited {
+            color: black;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: green;
+        }
+
+        /* selected link */
+        a:active {
+            color: red;
+        }
+
+        .enter{
+            width: 100px;
+            height: 15px;
+            background-image: url("safespace_logobg.png");
+            background-size: 150px 50px;
+            color: #fff;
+            padding: 10px;
+            font-size: 10pt;
+            margin: auto;
+
+            -webkit-transition: all .5s ease-in-out;
+            -moz-transition: all .5s ease-in-out;
+            -o-transition: all .5s ease-in-out;
+            -ms-transition: all .5s ease-in-out;
+        }
+
+        .enter a{ color: #fff; }
+        .enter:hover{
+            opacity: 0.7;
+        }
+
+        #main_div img{
+            width: 300px;
+            height: auto;
+            margin-top: 200px;
+            align-items:center;
+            justify-content:center;
+        }
