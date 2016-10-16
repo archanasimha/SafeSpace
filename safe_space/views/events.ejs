@@ -1,2 +1,104 @@
-Events around me:
-come to my crib yo;
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>SafeSpace</title>
+    <style type="text/css">
+        body{text-align: center; font: 2em; color: black} 
+        
+        /* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: green;
+}
+
+/* selected link */
+a:active {
+    color: black;
+}  
+nav ul ul {
+	display: none;
+}
+
+	nav ul li:hover > ul {
+		display: block;
+       
+	}
+        
+        nav ul {
+	background: #3D2914; 
+
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+        nav ul li {
+	float: left;
+}
+	nav ul li:hover {
+		background: #BD9D7D;
+	}
+		nav ul li:hover a {
+			color: #fff;
+		}
+	
+	nav ul li a {
+		display: block; padding: 15px 30px;
+		color: antiquewhite; text-decoration: none;
+	}
+        nav ul ul {
+	background: #E0D1C2; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #E0D1C2;
+		border-bottom: 1px solid #E0D1C2;
+		position: relative;
+	}
+		nav ul ul li a {
+			padding: 15px 40px;
+			color: #fff;
+		}	
+			nav ul ul li a:hover {
+				background: #BD9D7D;
+			}
+        nav ul ul ul {
+	position: absolute; left: 100%; top:0;
+}        
+    </style>
+        </head>
+        <body>
+            <nav>
+         <ul>
+             <li><a href=home.html>Home</a></li>
+             <li><a href=#>Tab 2</a>
+                 <ul>
+                     <li><a href=menu.html>Tab 3</a></li>
+                     <li><a href=food.html>Tab 4</a></li>
+                </ul>  
+             </li>
+             <li><a href=news.html>tab 5</a></li>
+             <li><a href=contact.html>Tab 6</a></li>
+         </ul>
+    
+    </nav> <br /><br /></div><div><br /></div>
+            </body>
+</html>
