@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
@@ -11,12 +11,18 @@
 <header>
       <title>SafeSpace</title>
       <style type="text/css">
-          body{background-color: #F1E6FC; text-align: center; font: 2em georgia; color: black}
+          body{background-color: #F1E6FC; text-align: center; 
+              font-family: 'Century Gothic'; color: black}
+
+          h1{
+
+              font-family: 'Century Gothic';
+          }
           /* unvisited link */
           a:link {
               color: black;
               text-decoration: none;
-              font-family: Century Gothic;
+              font-family: 'Century Gothic';
           }
 
           /* visited link */
@@ -115,8 +121,41 @@
           nav ul ul ul {
   	position: absolute; left: 100%; top:0;
   }
+
+  #emotions{
+    position: flex;
+    margin: auto;
+    width: 450px;
+  }
+  .ltext{
+    font-family: 'Century Gothic';
+    color: #fff;
+    font-size: 12pt;
+    top: 55px;
+    position: relative;
+    text-align: center;
+    width: 150px;
+  }
+
+  .l1, .l2, .l3, .l4, .l5, .l6{
+    width: 150px;
+    height: 150px;
+    background-size: 150px 150px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-shadow: 3px 2px 5px #000;
+    overflow: hidden;
+  }
+
+  .l1{background-image: url("content.png");}
+  .l2{margin-top: -150px; margin-left: 150px; background-image: url("angry.png");}
+  .l3{margin-top: -150px; margin-left: 300px; background-image: url("anxious.png");}
+  .l4{background-image: url("frustrated.png");}
+  .l5{margin-top: -150px; margin-left: 150px; background-image: url("dissapointed.png");}
+  .l6{margin-top: -150px; margin-left: 300px; background-image: url("confused.png");}
       </style>
-          <body>
+      <body>
             <div id=main_div>
                 <aside><img class=img_home src="safespace_transparent.png" alt="safespace" width="750" height="213"> </aside>
               <nav>
@@ -126,19 +165,25 @@
                <li><a href="events">Events</a></li>
                <li><a href="index">Index</a></li>
            </ul>
-      <body>
                </div>
-      <h1>
+          <h1>
 
-        "Wondrous is the strength of cheerfulness, and its power of endurance"
-        <hr>
+            "Wondrous is the strength of cheerfulness, and its power of endurance"
+          <hr>
 
-</body>
+          <div id="emotions">
+            <a href=content><div class="l1"><div class="ltext">content</div> </div></a>
+            <a href=angry><div class="l2"><div class="ltext">angry</div> </div></a>
+            <a href=anxious><div class="l3"><div class="ltext">anxious</div> </div></a>
+            <a href=frustrated><div class="l4"><div class="ltext">frustrated</div> </div></a>
+            <a href=disappointed><div class="l5"><div class="ltext">dissappointed</div> </div></a>
+            <a href=confused><div class="l6"><div class="ltext">confused</div> </div></a>
+          </div>
 
-<div class="w3-container">
-<div class="w3-responsive w3-card-4">
-<footer class="w3-container w3-blue-grey">
-  <p class="w3-opacity">Stay safe and feel safe</p>
-</footer>
-</body>
+          <div class="w3-container">
+          <div class="w3-responsive w3-card-4">
+          <footer class="w3-container w3-blue-grey">
+            <p class="w3-opacity">Stay safe and feel safe</p>
+          </footer>
+      </body>
 </html>
