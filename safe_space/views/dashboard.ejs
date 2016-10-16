@@ -141,12 +141,18 @@
     width: 150px;
     height: 150px;
     background-size: 150px 150px;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    text-shadow: 3px 2px 5px #000;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+    text-shadow: 2px 2px 5px #000;
     overflow: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
   }
+
+  .l1:hover, .l2:hover, .l3:hover, .l4:hover, .l5:hover, .l6:hover{ opacity: 0.5;}
 
   .l1{background-image: url("content.png");}
   .l2{margin-top: -150px; margin-left: 150px; background-image: url("angry.png");}
@@ -163,7 +169,7 @@
                <li><a href="dashboard">Home</a></li>
                <li><a href="advice">Advice</a></li>
                <li><a href="events">Events</a></li>
-               <li><a href="index">Index</a></li>
+               <li><a href="question_of_the_day">#qotd</a></li>
            </ul>
                </div>
           <h1>
