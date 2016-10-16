@@ -28,7 +28,25 @@ router.get('/dashboard', function(req, res, next) {
 router.get('/angry', function(req, res, next) {
   res.render('angry');
 });
+<<<<<<< Updated upstream
 
+=======
+router.get('/anxious', function(req, res, next) {
+  res.render('anxious');
+});
+router.get('/confused', function(req, res, next) {
+  res.render('confused');
+});
+router.get('/content', function(req, res, next) {
+  res.render('content');
+});
+router.get('/disappointed', function(req, res, next) {
+  res.render('disappointed');
+});
+router.get('/frustrated', function(req, res, next) {
+  res.render('frustrated');
+});
+>>>>>>> Stashed changes
 router.get('/question_of_the_day', function(req, res, next) {
   res.render('question_of_the_day');
 });
