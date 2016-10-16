@@ -21,5 +21,8 @@ router.get('/advice', function(req, res, next) {
   res.render('advice');
 });
 
+router.get('/dashboard', function(req, res, next) {
+  res.render('dashboard');
+});
 
 module.exports = router;
